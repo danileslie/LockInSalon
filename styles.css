@@ -1,8 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background: powderblue;
+}
+
+.serviceTable1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.serviceTable1 td {
+    padding: 8px;
+    border: #999 1px solid;
+}
+
+.serviceTable1 tr:nth-child(even) {
+    /*(even) or (2n+0)*/
+    background: #A4D1FF;
+}
+
+.serviceTable1 tr:nth-child(odd) {
+    /*(odd) or (2n+1)*/
+    background: #EAF4FF;
+}
+
+th {
+    text-align: left;
 }
