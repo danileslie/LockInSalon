@@ -68,3 +68,20 @@ th {
 .about-us{
     display: flex;
 }
+
+
+.staff{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.staff-pic{
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.details{
+    text-align: center;
+}
