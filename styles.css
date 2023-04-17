@@ -85,3 +85,12 @@ th {
 .details{
     text-align: center;
 }
+
+.contact-us{
+    display: flex;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction: column;
+}
