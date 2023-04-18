@@ -1,3 +1,5 @@
+/* GENERAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +7,83 @@
 }
 
 body {
-    background: powderblue;
+    background: #73abd6;
 }
+
+/* HEADER */
+
+header,
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.socials {
+    display: flex;
+}
+
+header a,
+footer a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: green;
+}
+
+header a:hover,
+footer a:hover {
+    color: grey;
+}
+
+.logo {
+    width: 20%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style-type: none;
+    margin-right: 5em;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+header button {
+    padding: 1rem;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+
+.copyright {
+    text-align: center;
+}
+
+footer a {
+    font-size: 1.5rem;
+}
+
+.social-icon {
+    width: 3rem;
+    margin-right: 3rem;
+}
+
+.socials .social-icon:last-child {
+    margin-right: 0;
+}
+
+/* HOME PAGE */
+
 
 .serviceTable1 {
     width: 100%;
@@ -61,36 +138,36 @@ th {
     grid-area: photoOne;
 }
 
-.gallery-flip > img:last-child{
+.gallery-flip>img:last-child {
     grid-area: photoThree;
 }
 
-.about-us{
+.about-us {
     display: flex;
 }
 
 
-.staff{
+.staff {
     display: flex;
     gap: 1em;
     justify-content: center;
 }
 
-.staff-pic{
+.staff-pic {
     height: 500px;
     width: 300px;
     object-fit: cover;
 }
 
-.details{
+.details {
     text-align: center;
 }
 
-.contact-us{
+.contact-us {
     display: flex;
 }
 
-.contact-form{
-    display:flex;
+.contact-form {
+    display: flex;
     flex-direction: column;
 }
