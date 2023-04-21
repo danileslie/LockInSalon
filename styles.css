@@ -104,55 +104,111 @@ main {
     margin: 0 auto 1% auto;
 }
 
-.flex{
-    display: flex; 
+.flex {
+    display: flex;
 }
 
-.inner{
+.inner {
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
-  }
+}
 
-  .row{
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
-  }
+}
 
 .testimonials {
-     padding: 40px 0;
-  background: #f1f1f1;
-  color: #434343;
-  /* text-align: center;  */
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
 }
 
-.testimonial{
+.testimonial {
     flex-direction: column;
     justify-content: space-between;
-  background: #fff;
-  padding: 30px;
-  border: 1px solid;
-  border-radius: 10px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 10px;
 }
 
-.col{
+.col {
     flex: 30%;
     max-width: 33.33%;
     box-sizing: border-box;
-    padding: 15px; 
+    padding: 15px;
 }
 
-.review{
+.review {
     font-size: 20px;
-    
+
 }
-.name{
+
+.name {
     font-size: 15px;
-  text-transform: uppercase;
-  margin: 20px 0;  
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.grid {
+    width: 50vw;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "one two two"
+        "three three four";
+    gap: 1em;
+}
+
+.services-home {
+    grid-area: one;
+}
+
+.lookbook-home {
+    grid-area: two;
+}
+
+.about-home {
+    grid-area: three;
+}
+
+.contact-home {
+    grid-area: four;
+}
+
+.details {
+    margin-bottom: 1%;
+}
+
+.square {
+    padding: 10rem 0;
+    background: #a9c1d4;
+    border: 1px solid;
+}
+
+.detail-text {
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid;
+    width: 50%;
+    margin: auto;
+    background:#e1e4f3;
+}
+
+.home-page-link {
+    font-size: 15px;
+    margin: 20px 0;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    background: #000;
+    color: #fff;
 }
 
 /* SERVICES */
