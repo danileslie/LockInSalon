@@ -84,6 +84,79 @@ footer a {
 
 /* HOME PAGE */
 
+main {
+    background: #fff;
+    padding: 1% 0;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: contain;
+    display: block;
+}
+
+.carousel-container {
+    border: 1px solid;
+    border-radius: 16px;
+    width: 70vw;
+    background: rgb(154, 154, 161);
+    margin: 0 auto 1% auto;
+}
+
+.flex{
+    display: flex; 
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+  }
+
+.testimonials {
+     padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  /* text-align: center;  */
+}
+
+.testimonial{
+    flex-direction: column;
+    justify-content: space-between;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.col{
+    flex: 30%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px; 
+}
+
+.review{
+    font-size: 20px;
+    
+}
+.name{
+    font-size: 15px;
+  text-transform: uppercase;
+  margin: 20px 0;  
+}
+
+/* SERVICES */
+
 
 .serviceTable1 {
     width: 100%;
