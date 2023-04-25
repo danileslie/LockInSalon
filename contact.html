@@ -11,66 +11,84 @@
 
 <body>
     <header>
-        <img class='logo' src='images/logo/vector/default-monochrome-black.svg'>
-        <nav>
-        <ul>
-            <li><a href='index.html'>Home</a></li>
-            <li><a href='services.html'>Services</a></li>
-            <li><a href='lookbook.html'>Lookbook</a></li>
-            <li><a href='about.html'>About</a></li>
-            <li><a href='contact.html'>Contact</a></li>
-        </ul>
-    </nav>
-        <button class='booking'>Book Appointment</button>
+        <div class='header'>
+            <img class='logo' src='images/logo/vector/default-monochrome-black.svg'>
+            <nav>
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='services.html'>Services</a></li>
+                    <li><a href='lookbook.html'>Lookbook</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                </ul>
+            </nav>
+            <button class='booking'>Book Appointment</button>
+        </div>
     </header>
     <main>
         <section class='contact-us'>
             <div class='location-and-hours'>
-            <div class='contact-info'>
-                <p class='contact'>Contact Us</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio eius animi aliquid, inventore ea ipsam alias optio quaerat voluptates tenetur.</p>
-                <p class='email'>email@email.com</p>
-                <p class='phone'>(123)-456-7890</p>
-                <p class='location'>Niagara Falls, ON</p>
+                <div class='contact-info'>
+                    <p class='contact'>Contact Us</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ullam eos ipsum voluptas reprehenderit, aspernatur eaque quidem iure, voluptate quam doloremque voluptatem consequatur quasi cum eveniet, molestiae illo. Velit consectetur optio nam eveniet nobis beatae expedita laborum rem suscipit similique modi nisi rerum corrupti itaque blanditiis, repudiandae exercitationem perferendis minima animi obcaecati sunt enim officia vero voluptatem. Repudiandae, ut laborum aliquid atque velit eos nesciunt, corporis ipsam aliquam autem voluptatibus.</p>
+                    <p class='email'>email@email.com</p>
+                    <p class='phone'>(123)-456-7890</p>
+                    <p class='location'>Niagara Falls, ON</p>
+                </div>
+                <div class='map'>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d186585.9715628661!2d-79.088035!3d43.053932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3445eec824db9%3A0x46d2c56156bda288!2sNiagara%20Falls%2C%20ON!5e0!3m2!1sen!2sca!4v1682440678571!5m2!1sen!2sca"
+                        width="100%"  height='100%' style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class='map'>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93292.8391609995!2d-79.17043478176062!3d43.05402838120321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3445eec824db9%3A0x46d2c56156bda288!2sNiagara%20Falls%2C%20ON!5e0!3m2!1sen!2sca!4v1681746125271!5m2!1sen!2sca"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
             <form class='contact-form'>
-                <label for='name'>Name: </label>
-                <input type='text' name='name' id='name'>
-                <label for='email'>E-mail:</label>
-                <input type='text' name='email' id='email'>
-                <label for='phone' name='phone'>Phone Number: </label>
-                <input type='tel' name='phone' id='phone'>
-                <label for='message'>Message: </label>
-                <textarea name='message' id='message' rows='10' cols='30'></textarea>
-                <button>Submit</button>
+
+                <div class='text-item'>
+                    <label for='name'>Name </label>
+                    <input type='text' name='name' id='name'>
+                </div>
+                <div class='text-item'>
+                    <label for='email'>E-mail</label>
+                    <input type='text' name='email' id='email'>
+                </div>
+
+                <div class='full-width'>
+                    <label for='subject' name='subject'>Subject </label>
+                    <input type='text' name='subject' id='subject'>
+                </div>
+                <div class='full-width'>
+                    <label for='message'>Message </label>
+                    <textarea name='message' id='message' rows='10'></textarea>
+                </div>
+                <button class='submit'>Submit</button>
             </form>
         </section>
     </main>
     <footer>
-        <img class='logo' src='images/logo/vector/default-monochrome-black.svg'>
-        <ul>
-            <li><a href='index.html'>Home</a></li>
-            <li><a href='services.html'>Services</a></li>
-            <li><a href='lookbook.html'>Lookbook</a></li>
-            <li><a href='about.html'>About</a></li>
-            <li><a href='contact.html'>Contact</a></li>
-        </ul>
-        <section class='socials'>
-            <img class='social-icon' src='images/socials/logo-facebook.svg'>
-            <img class='social-icon' src='images/socials/logo-instagram.svg'>
-            <img class='social-icon' src='images/socials/logo-twitter.svg'>
-        </section>
-        <section class='copyright'>
-            <p> © Dani Leslie</p>
-        </section>
+        <div class='footer'>
+            <div class='top'>
+                <img class='logo' src='images/logo/vector/default-monochrome-black.svg'>
+                <nav>
+                    <ul>
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='services.html'>Services</a></li>
+                        <li><a href='lookbook.html'>Lookbook</a></li>
+                        <li><a href='about.html'>About</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
+                <section class='socials'>
+                    <img class='social-icon' src='images/socials/logo-facebook.svg'>
+                    <img class='social-icon' src='images/socials/logo-instagram.svg'>
+                    <img class='social-icon' src='images/socials/logo-twitter.svg'>
+                </section>
+            </div>
+            <section class='copyright'>
+                <p> © Dani Leslie</p>
+            </section>
+        </div>
     </footer>
 </body>
 

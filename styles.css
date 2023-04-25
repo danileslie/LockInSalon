@@ -168,7 +168,8 @@ main {
     font-size: 20px;
 }
 
-.name, .about-name {
+.name,
+.about-name {
     font-size: 15px;
     text-transform: uppercase;
     margin: 20px 0;
@@ -354,11 +355,14 @@ th {
     padding: 2%;
 }
 
-.title {
+.title,
+.contact {
     font-size: 50px;
     font-weight: 700;
     padding: 5% 0;
 }
+
+
 
 .blurb {
     font-size: 30px;
@@ -396,14 +400,102 @@ th {
     padding: 5%;
 }
 
-.about-name{
+.about-name {
     margin: 0 0 2% 0;
 }
+
+/* CONTACT */
+
 .contact-us {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    padding: 3%;  
+    height: 80vh;  
+}
+
+.location-and-hours{
+    display: flex; 
+    flex-direction: column; 
+    gap: 5%;
+}
+
+.contact-info{
+    font-size: 20px;
+}
+iframe{
+    display: block;
+}
+.contact {
+    padding: 0;
 }
 
 .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: auto;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    line-height: 2;
+    font: 1.25rem / 1.5 sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+}
+
+label {
+    font-size: 30px;
+}
+
+.text-item {
     display: flex;
     flex-direction: column;
+}
+
+input,
+textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid;
+}
+
+textarea {
+    height: 200px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.submit {
+    display: block;
+    line-height: 2;
+    padding: 0 20px;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    margin-top: 2%;
+    font-size: 20px;
+    /* height: 100%; */
+}
+
+.map{
+    border: 2px solid red;
+    height: 100%;
 }
