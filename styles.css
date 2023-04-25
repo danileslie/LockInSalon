@@ -288,6 +288,14 @@ th {
 .price{
     text-align: right;
 }
+
+/* GALLERY */
+
+.gallery, .gallery-flip{
+    width: 80%;
+    height: 80vh;
+    margin: 2% auto;
+}
 .gallery {
     display: grid;
     gap: 1em;
@@ -295,6 +303,7 @@ th {
         "photoOne photoTwo photoThree"
         "photoOne photoFour photoFive";
     grid-template-columns: 1fr 20% 20%;
+
 }
 
 .gallery-flip {
@@ -308,6 +317,7 @@ th {
 
 .gallery-image {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
