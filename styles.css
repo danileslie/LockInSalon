@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Lato, sans-serif;
+    font-family: Cabin, sans-serif;
 }
 
 /* HEADER */
@@ -83,10 +83,11 @@ header button:hover {
     background: rgb(105, 152, 240)
 }
 
-.phone-number{
+.phone-number {
     color: #f19844;
     font-size: 2rem;
 }
+
 /* FOOTER */
 
 .copyright {
@@ -126,13 +127,15 @@ main {
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
-h1, h2{
+h1,
+h2 {
     /* border: 2px solid red; */
     text-align: center;
     padding: 2.5rem;
     font-size: 5rem;
     color: #f19844;
 }
+
 .flex {
     display: flex;
 }
@@ -262,35 +265,23 @@ h1, h2{
     width: 40%;
     border-collapse: collapse;
     margin: 30px auto 50px auto;
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    background: #D7DEDC;
+    /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
+    /* background: #D7DEDC; */
 }
 
 .serviceTable1 td {
-    padding: 15px;
-
+    padding: 30px;
 }
 
-.serviceTable1 tr {
-    border-bottom: 1px solid rgb(216, 181, 181);
-}
 
 .serviceTable1 tr:hover {
     background: rgb(248, 230, 230);
 }
 
-/* .serviceTable1 tr:nth-child(even) {
-    (even) or (2n+0)
-    background: #c7e0f8;
-}
-
-.serviceTable1 tr:nth-child(odd) {
-    (odd) or (2n+1)
-    
-} */
-
 caption {
-    font-size: 30px;
+    font-size: 60px;
+    border-bottom: 2px solid;
+    padding: 20px;
 }
 
 th {
@@ -420,24 +411,32 @@ th {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    padding: 3%;  
-    height: 80vh;  
+    padding: 3%;
+    height: 84vh;
+    gap: 7rem;
 }
 
-.location-and-hours{
-    display: flex; 
-    flex-direction: column; 
+.email, .phone{
+    font-size: 3rem;
+}
+.location-and-hours {
+    display: flex;
+    flex-direction: column;
     gap: 5%;
 }
 
-.contact-info{
+.contact-info {
     font-size: 20px;
+    text-align: center;
 }
-iframe{
+
+iframe {
     display: block;
 }
+
 .contact {
     padding: 0;
+    
 }
 
 .contact-form {
@@ -445,6 +444,11 @@ iframe{
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: auto;
+    width: 100%;
+    padding: 2rem;
+    background: #f5f3ef;
+    border-radius: 10px;
+
 }
 
 label,
@@ -460,6 +464,7 @@ textarea {
 
 label {
     font-size: 30px;
+    padding: 0.5rem 0;
 }
 
 .text-item {
@@ -479,7 +484,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border: 1px solid;
+    
+    border: 2px solid #000;
 }
 
 textarea {
@@ -505,7 +511,7 @@ textarea {
     /* height: 100%; */
 }
 
-.map{
-    border: 2px solid red;
+.map {
+    display: block;
     height: 100%;
 }
