@@ -1,29 +1,112 @@
 /* GENERAL STYLES */
 
+:root {
+    --primary: #364652;
+    --secondary: #f19844;
+    --accent: #f5f3ef;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+body,
+.header,
+nav>ul,
+.square,
+.inner,
+.row,
+.testimonial,
+.top,
+.socials,
+.about-page,
+.text-item,
+.about-us,
+.about-blurb,
+.employee,
+.staff,
+.location-and-hours,
+.text-item {
+    display: flex;
 }
 
 body {
-
-    min-height: 100vh;
-    display: flex;
     flex-direction: column;
     font-family: Cabin, sans-serif;
+    font-size: 16px;
+}
+
+
+/* TEXT AND COLOURS */
+
+header,
+footer {
+    background: var(--primary);
+}
+
+header a,
+footer a,
+.phone-number,
+.copyright,
+h1,
+h2,
+.name,
+.about-name {
+    color: var(--secondary);
+}
+
+.carousel-container,
+.testimonials,
+.about-us,
+.detail-text,
+.about-details,
+.contact-form {
+    background: var(--accent);
+}
+
+.title,
+.contact,
+h1,
+h2,
+caption,
+.title,
+.contact {
+    font-size: 3rem;
+}
+
+header a,
+.phone-number,
+.email,
+.phone {
+    font-size: 2rem;
+}
+
+footer a,
+.review,
+.detail-text,
+.serviceTable1,
+.contact-info,
+input,
+textarea,
+.submit,
+label,
+.blurb, .name,
+.about-name {
+    font-size: 1.5rem;
+}
+
+
+.home-page-link, .position {
+    font-size: 1rem;
 }
 
 /* HEADER */
 
-header,
-footer {
-    background: #364652;
-}
-
 .header,
 .top {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
@@ -35,29 +118,27 @@ footer {
     margin-top: auto;
 }
 
-.socials {
-    display: flex;
-}
-
 header a,
 footer a {
-    font-size: 2rem;
     text-decoration: none;
-    color: #f19844;
 }
 
-header a:hover,
+header ul a:hover,
 footer a:hover {
     color: grey;
     border-bottom: 6px solid #D7DEDC;
 }
 
+object {
+    pointer-events: none;
+}
+
 .logo {
+    display: block;
     width: 20%;
 }
 
 nav ul {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -70,34 +151,13 @@ ul li:last-child {
     margin-right: 0;
 }
 
-header button {
-    padding: 1rem;
-    border-radius: 25px;
-    border-style: none;
-    font-size: 1rem;
-    background: rgb(26, 101, 240);
-    color: #fff;
-}
-
-header button:hover {
-    background: rgb(105, 152, 240)
-}
-
-.phone-number {
-    color: #f19844;
-    font-size: 2rem;
-}
-
 /* FOOTER */
 
 .copyright {
     text-align: center;
-    color: #f19844;
 }
 
-footer a {
-    font-size: 1.5rem;
-}
+
 
 .social-icon {
     width: 3rem;
@@ -122,23 +182,17 @@ main {
 }
 
 .carousel-container {
-    background: #f1f1f1;
     margin: 0 auto 1% auto;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 h1,
 h2 {
-    /* border: 2px solid red; */
     text-align: center;
     padding: 2.5rem;
-    font-size: 5rem;
-    color: #f19844;
 }
 
-.flex {
-    display: flex;
-}
+
 
 .inner {
     max-width: 1200px;
@@ -147,7 +201,6 @@ h2 {
 }
 
 .row {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
@@ -155,7 +208,6 @@ h2 {
 
 .testimonials {
     padding: 0 0 40px 0;
-    background: #f1f1f1;
     color: #434343;
 }
 
@@ -176,21 +228,11 @@ h2 {
     padding: 30px;
 }
 
-.review {
-    font-size: 20px;
-}
-
 .name,
 .about-name {
-    font-size: 15px;
     text-transform: uppercase;
     margin: 20px 0;
     font-weight: 700;
-    color: #f19844;
-}
-
-.review-credit {
-    display: flex;
 }
 
 .grid {
@@ -224,7 +266,6 @@ h2 {
 }
 
 .square {
-    display: flex;
     flex-direction: column;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     opacity: 1;
@@ -241,13 +282,10 @@ h2 {
 }
 
 .detail-text {
-    font-size: 25px;
     padding: 25px;
-    background: #f5f3ef;
 }
 
 .home-page-link {
-    font-size: 15px;
     padding: 25px;
     text-transform: uppercase;
     text-decoration: underline;
@@ -261,7 +299,6 @@ h2 {
 
 
 .serviceTable1 {
-    font-size: 30px;
     width: 40%;
     border-collapse: collapse;
     margin: 30px auto 50px auto;
@@ -279,7 +316,6 @@ h2 {
 }
 
 caption {
-    font-size: 60px;
     border-bottom: 2px solid;
     padding: 20px;
 }
@@ -339,18 +375,14 @@ th {
 /* ABOUT US */
 
 .about-page {
-    display: flex;
     flex-direction: column;
 }
 
 .about-us {
-    display: flex;
-    background: #f1f1f1;
     margin-bottom: 1%;
 }
 
 .about-blurb {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2%;
@@ -358,7 +390,6 @@ th {
 
 .title,
 .contact {
-    font-size: 50px;
     font-weight: 700;
     padding: 5% 0;
 }
@@ -366,7 +397,6 @@ th {
 
 
 .blurb {
-    font-size: 30px;
     line-height: 2;
 }
 
@@ -376,13 +406,13 @@ th {
 }
 
 .employee {
-    display: flex;
+
     flex-direction: column;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .staff {
-    display: flex;
+
     gap: 1em;
     margin: auto;
     margin-bottom: 1%;
@@ -396,7 +426,6 @@ th {
 
 .about-details {
     text-align: center;
-    background: #f5f3ef;
     border-top: 6px solid;
     padding: 5%;
 }
@@ -416,17 +445,12 @@ th {
     gap: 7rem;
 }
 
-.email, .phone{
-    font-size: 3rem;
-}
 .location-and-hours {
-    display: flex;
     flex-direction: column;
     gap: 5%;
 }
 
 .contact-info {
-    font-size: 20px;
     text-align: center;
 }
 
@@ -436,7 +460,6 @@ iframe {
 
 .contact {
     padding: 0;
-    
 }
 
 .contact-form {
@@ -446,9 +469,7 @@ iframe {
     margin: auto;
     width: 100%;
     padding: 2rem;
-    background: #f5f3ef;
     border-radius: 10px;
-
 }
 
 label,
@@ -456,19 +477,17 @@ input,
 textarea {
     display: block;
     line-height: 2;
-    font: 1.25rem / 1.5 sans-serif;
+    /* font: 1.25rem / 1.5 sans-serif; */
     box-sizing: border-box;
     width: 100%;
     padding: 0.5rem 0.75rem;
 }
 
 label {
-    font-size: 30px;
     padding: 0.5rem 0;
 }
 
 .text-item {
-    display: flex;
     flex-direction: column;
 }
 
@@ -479,12 +498,10 @@ textarea {
     border-radius: 5px;
     padding-left: 10px;
     outline: none;
-    font-size: 20px;
 }
 
 input:focus,
 textarea:focus {
-    
     border: 2px solid #000;
 }
 
@@ -507,8 +524,6 @@ textarea {
     border-bottom: 2px solid transparent;
     outline: none;
     margin-top: 2%;
-    font-size: 20px;
-    /* height: 100%; */
 }
 
 .map {
