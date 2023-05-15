@@ -98,7 +98,7 @@ h2,
 .contact,
 h1,
 h2,
-caption,
+.caption,
 .title,
 .contact {
     font-size: 3rem;
@@ -194,22 +194,22 @@ object {
     display: none;
 }
 
-#toggle:checked ~ nav .navlist {
+#toggle:checked~nav .navlist {
     transform: translateY(0);
 }
 
-#toggle:checked ~ nav .nav-toggle .bar:nth-child(1){
+#toggle:checked~nav .nav-toggle .bar:nth-child(1) {
     position: absolute;
-transform:rotate(45deg);
+    transform: rotate(45deg);
 }
 
-#toggle:checked ~ nav .nav-toggle .bar:nth-child(2){
-display: none;
+#toggle:checked~nav .nav-toggle .bar:nth-child(2) {
+    display: none;
 }
 
-#toggle:checked ~ nav .nav-toggle .bar:nth-child(3){
+#toggle:checked~nav .nav-toggle .bar:nth-child(3) {
     transform: rotate(-45deg);
-    }
+}
 
 .bar {
     width: var(--bar-width);
@@ -237,6 +237,7 @@ ul li:last-child {
 
 .copyright p {
     text-align: center;
+    margin: 1rem 0 1rem 0;
 }
 
 .social-icon {
@@ -251,9 +252,9 @@ ul li:last-child {
 
 /* HOME PAGE */
 
-main {
+/* main {
     background: #fff;
-}
+} */
 
 .carousel-img {
     width: 100%;
@@ -361,6 +362,7 @@ h2 {
 .serviceTable1 {
     width: 40%;
     border-collapse: collapse;
+    margin: auto;
     margin: 30px auto 50px auto;
 }
 
@@ -368,24 +370,22 @@ h2 {
     padding: 30px;
 }
 
-
 .serviceTable1 tr:hover {
     background: var(--accent);
 }
 
-caption {
+.caption {
     border-bottom: 2px solid;
     padding: 20px;
+    margin: auto;
+    width: 40%;
 }
 
-th {
-    text-align: left;
-    border: 2px solid red;
+tr{
+    display: flex;
+    justify-content: space-between;
 }
 
-.price {
-    text-align: right;
-}
 
 /* GALLERY */
 
@@ -594,8 +594,17 @@ form textarea {
 /* MEDIA QUERIES
 /*******************************************/
 @media screen and (max-width: 1399px) {
-    .header {
+    .header{
         width: 90%;
+    }
+
+    .caption, .serviceTable1{
+       width: 100%;
+        margin: auto;
+         text-align: center;
+    }
+    .details{
+        width: 90vw;
     }
 
     .phone-number {
@@ -631,12 +640,36 @@ form textarea {
         border-bottom: 1px solid var(--secondary);
     }
 
-    .navitem:last-child{
+    .navitem:last-child {
         border-bottom: none;
     }
+
     .nav-toggle {
         display: grid;
     }
+
+    .carousel-container {
+        display: none;
+    }
+
+    .details, .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .inner,
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        max-width: 100%;
+    }
+
+    .top{
+        display: none;
+    }
+
+
 }
 
 @media (min-width: 1400px) and (max-width: 1719px) {
