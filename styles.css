@@ -461,6 +461,7 @@ tr{
     gap: 1rem;
     margin: auto;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .staff-pic {
@@ -589,7 +590,7 @@ form textarea {
 /* MEDIA QUERIES
 /*******************************************/
 @media screen and (max-width: 1399px) {
-    .header, .gallery{
+    .header, .gallery, .staff{
         width: 90%;
     }
 
@@ -598,7 +599,7 @@ form textarea {
         margin: auto;
          text-align: center;
     }
-    .details{
+    .details, .staff{
         width: 90vw;
     }
 
@@ -676,6 +677,14 @@ form textarea {
         margin-bottom: 0;
     }
 
+    .about-img{
+        display: none;
+    }
+    
+    .staff-pic, .staff .employee:last-child > .staff-pic{
+        width: 100%;
+        flex-grow: 0;
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1719px) {
