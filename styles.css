@@ -488,12 +488,9 @@ tr{
 
 .contact-us {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    height: 84vh;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin: auto;
-    margin-bottom: 2rem;
+    margin: 2% auto;
 }
 
 .location-and-hours {
@@ -590,7 +587,7 @@ form textarea {
 /* MEDIA QUERIES
 /*******************************************/
 @media screen and (max-width: 1399px) {
-    .header, .gallery, .staff{
+    .header, .gallery, .staff, .contact-us{
         width: 90%;
     }
 
@@ -680,11 +677,24 @@ form textarea {
     .about-img{
         display: none;
     }
-    
+
     .staff-pic, .staff .employee:last-child > .staff-pic{
         width: 100%;
         flex-grow: 0;
     }
+
+    .map{
+        display: none;
+    }
+    .contact-us{
+       grid-template-columns: 1fr;
+    }
+
+    .text-item{
+        grid-column: span 2;
+    }
+
+    
 }
 
 @media (min-width: 1400px) and (max-width: 1719px) {
