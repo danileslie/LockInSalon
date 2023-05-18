@@ -40,7 +40,7 @@ body,
 .about-us,
 .about-blurb,
 .employee,
-.staff,
+
 .location-and-hours,
 .text-item,
 .hamburger-menu {
@@ -455,20 +455,17 @@ tr {
 }
 
 .staff {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin: auto;
     margin-bottom: 2rem;
-    flex-wrap: wrap;
 }
 
 .staff-pic {
-    width: calc((70vw / 4) - 1rem);
+    width: 100%;
     object-fit: cover;
-    flex-grow: 1;
-}
-
-.staff .employee:last-child>.staff-pic {
-    width: calc(70vw / 4);
+    flex: 1;
 }
 
 .about-details {
@@ -485,7 +482,7 @@ tr {
 
 .contact-us {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 2% auto;
 }
@@ -646,7 +643,8 @@ form textarea {
     }
 
     .details,
-    .gallery {
+    .gallery,
+    .staff {
         grid-template-columns: 1fr;
     }
 
@@ -663,8 +661,15 @@ form textarea {
         display: none;
     }
 
-    .gallery {
+    .gallery,
+    .staff {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .staff-pic {
+        height: 500px;
+        object-fit: cover;
+        flex: auto;
     }
 
     .gallery>picture:nth-child(10n + 1),
@@ -678,12 +683,6 @@ form textarea {
 
     .about-img {
         display: none;
-    }
-
-    .staff-pic,
-    .staff .employee:last-child>.staff-pic {
-        width: 100%;
-        flex-grow: 0;
     }
 
     .map {
