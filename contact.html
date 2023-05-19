@@ -55,8 +55,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <form class='contact-form'>
-
+            <form class='contact-form' name='contact' method='POST' netlify>
                 <div class='text-item'>
                     <label for='name'>Name </label>
                     <input type='text' name='name' id='name'>
@@ -73,6 +72,9 @@
                 <div class='full-width'>
                     <label for='message'>Message </label>
                     <textarea name='message' id='message' rows='10'></textarea>
+                </div>
+                <div class='captcha'>
+                    <div data-netlify-recaptcha="true">
                 </div>
                 <button class='submit'>Submit</button>
             </form>
