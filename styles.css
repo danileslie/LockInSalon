@@ -27,6 +27,7 @@ nav .navlist .navitem {
 }
 
 
+
 body,
 .header,
 .navlist,
@@ -40,7 +41,6 @@ body,
 .about-us,
 .about-blurb,
 .employee,
-
 .location-and-hours,
 .text-item,
 .hamburger-menu {
@@ -150,10 +150,6 @@ label,
 
 .footer {
     margin-bottom: 1rem;
-}
-
-footer {
-    margin-top: auto;
 }
 
 header a,
@@ -267,8 +263,6 @@ h2 {
     text-align: center;
     padding: 2.5rem;
 }
-
-
 
 .inner {
     max-width: 1200px;
@@ -496,10 +490,6 @@ tr {
     text-align: center;
 }
 
-iframe {
-    display: block;
-}
-
 .contact {
     padding: 0;
 }
@@ -705,11 +695,4 @@ form textarea {
         width: 100%;
     }
 
-}
-
-@media screen and (min-width: 1720px) {
-
-    ul li {
-        margin-right: 2rem;
-    }
 }

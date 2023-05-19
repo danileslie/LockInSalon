@@ -15,14 +15,21 @@
 <body>
     <header>
         <div class='header'>
-            <a href='index.html' class='logo'><object type="image/svg+xml" data="/images/logo/vector/default-monochrome-white.svg"></object></a>
+            <a href='index.html' class='logo logo-and-name'><object type="image/svg+xml" data="/images/logo/vector/default-monochrome-white.svg"></object></a>
+            <a href='index.html' class='logo-isolated'><object type="image/svg+xml" data="/images/logo/vector/logo-isolated-monochrome-white.svg"></object></a>
+            <input type='checkbox' id='toggle'>
             <nav>
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='services.html'>Services</a></li>
-                    <li><a href='gallery.html'>Gallery</a></li>
-                    <li><a href='about.html'>About</a></li>
-                    <li><a href='contact.html'>Contact</a></li>
+                <label class='nav-toggle' for='toggle'>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <ul class='navlist'>
+                    <li class='navitem'><a href='index.html'>Home</a></li>
+                    <li class='navitem'><a href='services.html'>Services</a></li>
+                    <li class='navitem'><a href='gallery.html'>Gallery</a></li>
+                    <li class='navitem'><a href='about.html'>About</a></li>
+                    <li class='navitem'><a href='contact.html'>Contact</a></li>
                 </ul>
             </nav>
             <p class='phone-number'>+1 (123) 456 7890</p>
@@ -86,7 +93,7 @@
             <div class='top'>
                 <a href='index.html' class='logo'><object type="image/svg+xml" data="/images/logo/vector/default-monochrome-white.svg"></object></a>
                 <nav>
-                    <ul>
+                    <ul class='navlist'>
                         <li><a href='index.html'>Home</a></li>
                         <li><a href='services.html'>Services</a></li>
                         <li><a href='gallery.html'>Gallery</a></li>
