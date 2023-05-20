@@ -145,7 +145,6 @@ label,
     align-items: center;
     width: 80%;
     margin: 1rem auto;
-    padding: 1rem;
 }
 
 .footer {
@@ -252,6 +251,19 @@ ul li:last-child {
     height: 90vh;
     object-fit: contain;
     display: block;
+}
+
+.glide__arrow{
+    position: absolute;
+display: block;
+top: 50%;
+z-index: 2;
+color: #364652;
+
+padding: 2rem;
+
+border: 2px solid #364652;
+
 }
 
 .carousel-container {
